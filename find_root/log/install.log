@@ -1,0 +1,556 @@
+Making install in gsl
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/gsl'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/gsl'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/gsl'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/gsl'
+Making install in utils
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/utils'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/utils'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/utils'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/utils'
+Making install in sys
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/sys'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/sys'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_sys.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/sys'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/sys'
+Making install in test
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/test'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/test'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_test.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/test'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/test'
+Making install in err
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/err'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/err'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_errno.h gsl_message.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/err'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/err'
+Making install in bst
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/bst'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/bst'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_bst.h gsl_bst_types.h gsl_bst_avl.h gsl_bst_rb.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/bst'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/bst'
+Making install in const
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/const'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/const'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_const.h gsl_const_cgs.h gsl_const_mks.h gsl_const_cgsm.h gsl_const_mksa.h gsl_const_num.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/const'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/const'
+Making install in complex
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/complex'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/complex'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_complex.h gsl_complex_math.h test_source.c '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/complex'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/complex'
+Making install in cheb
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/cheb'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/cheb'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_chebyshev.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/cheb'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/cheb'
+Making install in block
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/block'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/block'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_block.h gsl_block_char.h gsl_block_complex_double.h gsl_block_complex_float.h gsl_block_complex_long_double.h gsl_block_double.h gsl_block_float.h gsl_block_int.h gsl_block_long.h gsl_block_long_double.h gsl_block_short.h gsl_block_uchar.h gsl_block_uint.h gsl_block_ulong.h gsl_block_ushort.h gsl_check_range.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/block'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/block'
+Making install in vector
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/vector'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/vector'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_vector.h gsl_vector_char.h gsl_vector_complex.h gsl_vector_complex_double.h gsl_vector_complex_float.h gsl_vector_complex_long_double.h gsl_vector_double.h gsl_vector_float.h gsl_vector_int.h gsl_vector_long.h gsl_vector_long_double.h gsl_vector_short.h gsl_vector_uchar.h gsl_vector_uint.h gsl_vector_ulong.h gsl_vector_ushort.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/vector'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/vector'
+Making install in matrix
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/matrix'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/matrix'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_matrix.h gsl_matrix_char.h gsl_matrix_complex_double.h gsl_matrix_complex_float.h gsl_matrix_complex_long_double.h gsl_matrix_double.h gsl_matrix_float.h gsl_matrix_int.h gsl_matrix_long.h gsl_matrix_long_double.h gsl_matrix_short.h gsl_matrix_uchar.h gsl_matrix_uint.h gsl_matrix_ulong.h gsl_matrix_ushort.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/matrix'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/matrix'
+Making install in permutation
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/permutation'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/permutation'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_permutation.h gsl_permute.h gsl_permute_char.h gsl_permute_complex_double.h gsl_permute_complex_float.h gsl_permute_complex_long_double.h gsl_permute_double.h gsl_permute_float.h gsl_permute_int.h gsl_permute_long.h gsl_permute_long_double.h gsl_permute_short.h gsl_permute_uchar.h gsl_permute_uint.h gsl_permute_ulong.h gsl_permute_ushort.h gsl_permute_vector.h gsl_permute_vector_char.h gsl_permute_vector_complex_double.h gsl_permute_vector_complex_float.h gsl_permute_vector_complex_long_double.h gsl_permute_vector_double.h gsl_permute_vector_float.h gsl_permute_vector_int.h gsl_permute_vector_long.h gsl_permute_vector_long_double.h gsl_permute_vector_short.h gsl_permute_vector_uchar.h gsl_permute_vector_uint.h gsl_permute_vector_ulong.h gsl_permute_vector_ushort.h gsl_permute_matrix_char.h gsl_permute_matrix_complex_long_double.h gsl_permute_matrix.h gsl_permute_matrix_long.h gsl_permute_matrix_uint.h gsl_permute_matrix_complex_double.h gsl_permute_matrix_double.h gsl_permute_matrix_int.h gsl_permute_matrix_short.h '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_permute_matrix_ulong.h gsl_permute_matrix_complex_float.h gsl_permute_matrix_float.h gsl_permute_matrix_long_double.h gsl_permute_matrix_uchar.h gsl_permute_matrix_ushort.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/permutation'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/permutation'
+Making install in combination
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/combination'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/combination'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_combination.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/combination'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/combination'
+Making install in multiset
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/multiset'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/multiset'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_multiset.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/multiset'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/multiset'
+Making install in sort
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/sort'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/sort'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_heapsort.h gsl_sort.h gsl_sort_char.h gsl_sort_double.h gsl_sort_float.h gsl_sort_int.h gsl_sort_long.h gsl_sort_long_double.h gsl_sort_short.h gsl_sort_uchar.h gsl_sort_uint.h gsl_sort_ulong.h gsl_sort_ushort.h gsl_sort_vector.h gsl_sort_vector_char.h gsl_sort_vector_double.h gsl_sort_vector_float.h gsl_sort_vector_int.h gsl_sort_vector_long.h gsl_sort_vector_long_double.h gsl_sort_vector_short.h gsl_sort_vector_uchar.h gsl_sort_vector_uint.h gsl_sort_vector_ulong.h gsl_sort_vector_ushort.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/sort'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/sort'
+Making install in ieee-utils
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/ieee-utils'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/ieee-utils'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_ieee_utils.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/ieee-utils'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/ieee-utils'
+Making install in cblas
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/cblas'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/cblas'
+ /usr/bin/mkdir -p '/home/wang/find_root/lib'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   libgslcblas.la '/home/wang/find_root/lib'
+libtool: install: /usr/bin/install -c .libs/libgslcblas.so.0.0.0 /home/wang/find_root/lib/libgslcblas.so.0.0.0
+libtool: install: (cd /home/wang/find_root/lib && { ln -s -f libgslcblas.so.0.0.0 libgslcblas.so.0 || { rm -f libgslcblas.so.0 && ln -s libgslcblas.so.0.0.0 libgslcblas.so.0; }; })
+libtool: install: (cd /home/wang/find_root/lib && { ln -s -f libgslcblas.so.0.0.0 libgslcblas.so || { rm -f libgslcblas.so && ln -s libgslcblas.so.0.0.0 libgslcblas.so; }; })
+libtool: install: /usr/bin/install -c .libs/libgslcblas.lai /home/wang/find_root/lib/libgslcblas.la
+libtool: install: /usr/bin/install -c .libs/libgslcblas.a /home/wang/find_root/lib/libgslcblas.a
+libtool: install: chmod 644 /home/wang/find_root/lib/libgslcblas.a
+libtool: install: ranlib /home/wang/find_root/lib/libgslcblas.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/sbin" ldconfig -n /home/wang/find_root/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /home/wang/find_root/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_cblas.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/cblas'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/cblas'
+Making install in blas
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/blas'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/blas'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_blas.h gsl_blas_types.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/blas'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/blas'
+Making install in linalg
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/linalg'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/linalg'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_linalg.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/linalg'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/linalg'
+Making install in eigen
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/eigen'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/eigen'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_eigen.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/eigen'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/eigen'
+Making install in specfunc
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/specfunc'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/specfunc'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_sf.h gsl_sf_airy.h gsl_sf_bessel.h gsl_sf_clausen.h gsl_sf_coulomb.h gsl_sf_coupling.h gsl_sf_dawson.h gsl_sf_debye.h gsl_sf_dilog.h gsl_sf_elementary.h gsl_sf_ellint.h gsl_sf_elljac.h gsl_sf_erf.h gsl_sf_exp.h gsl_sf_expint.h gsl_sf_fermi_dirac.h gsl_sf_gamma.h gsl_sf_gegenbauer.h gsl_sf_hermite.h gsl_sf_hyperg.h gsl_sf_laguerre.h gsl_sf_lambert.h gsl_sf_legendre.h gsl_sf_log.h gsl_sf_mathieu.h gsl_sf_pow_int.h gsl_sf_psi.h gsl_sf_result.h gsl_sf_sincos_pi.h gsl_sf_synchrotron.h gsl_sf_transport.h gsl_sf_trig.h gsl_sf_zeta.h gsl_specfunc.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/specfunc'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/specfunc'
+Making install in dht
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/dht'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/dht'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_dht.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/dht'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/dht'
+Making install in qrng
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/qrng'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/qrng'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_qrng.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/qrng'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/qrng'
+Making install in rng
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/rng'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/rng'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_rng.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/rng'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/rng'
+Making install in randist
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/randist'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/randist'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_randist.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/randist'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/randist'
+Making install in fft
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/fft'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/fft'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_fft.h gsl_fft_complex.h gsl_fft_halfcomplex.h gsl_fft_real.h gsl_dft_complex.h gsl_dft_complex_float.h gsl_fft_complex_float.h gsl_fft_halfcomplex_float.h gsl_fft_real_float.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/fft'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/fft'
+Making install in poly
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/poly'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/poly'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_poly.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/poly'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/poly'
+Making install in fit
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/fit'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/fit'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_fit.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/fit'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/fit'
+Making install in multifit
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/multifit'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/multifit'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_multifit.h gsl_multifit_nlin.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/multifit'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/multifit'
+Making install in multifit_nlinear
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/multifit_nlinear'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/multifit_nlinear'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_multifit_nlinear.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/multifit_nlinear'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/multifit_nlinear'
+Making install in multilarge
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/multilarge'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/multilarge'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_multilarge.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/multilarge'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/multilarge'
+Making install in multilarge_nlinear
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/multilarge_nlinear'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/multilarge_nlinear'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_multilarge_nlinear.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/multilarge_nlinear'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/multilarge_nlinear'
+Making install in filter
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/filter'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/filter'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_filter.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/filter'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/filter'
+Making install in movstat
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/movstat'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/movstat'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_movstat.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/movstat'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/movstat'
+Making install in rstat
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/rstat'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/rstat'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_rstat.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/rstat'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/rstat'
+Making install in statistics
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/statistics'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/statistics'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_statistics.h gsl_statistics_char.h gsl_statistics_double.h gsl_statistics_float.h gsl_statistics_int.h gsl_statistics_long.h gsl_statistics_long_double.h gsl_statistics_short.h gsl_statistics_uchar.h gsl_statistics_uint.h gsl_statistics_ulong.h gsl_statistics_ushort.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/statistics'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/statistics'
+Making install in siman
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/siman'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/siman'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_siman.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/siman'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/siman'
+Making install in sum
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/sum'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/sum'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_sum.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/sum'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/sum'
+Making install in integration
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/integration'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/integration'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_integration.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/integration'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/integration'
+Making install in interpolation
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/interpolation'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/interpolation'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_interp.h gsl_spline.h gsl_interp2d.h gsl_spline2d.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/interpolation'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/interpolation'
+Making install in histogram
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/histogram'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/histogram'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_histogram.h gsl_histogram2d.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/histogram'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/histogram'
+Making install in ode-initval
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/ode-initval'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/ode-initval'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_odeiv.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/ode-initval'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/ode-initval'
+Making install in ode-initval2
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/ode-initval2'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/ode-initval2'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_odeiv2.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/ode-initval2'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/ode-initval2'
+Making install in roots
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/roots'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/roots'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_roots.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/roots'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/roots'
+Making install in multiroots
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/multiroots'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/multiroots'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_multiroots.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/multiroots'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/multiroots'
+Making install in min
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/min'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/min'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_min.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/min'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/min'
+Making install in multimin
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/multimin'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/multimin'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_multimin.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/multimin'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/multimin'
+Making install in monte
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/monte'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/monte'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_monte.h gsl_monte_vegas.h gsl_monte_miser.h gsl_monte_plain.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/monte'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/monte'
+Making install in ntuple
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/ntuple'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/ntuple'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_ntuple.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/ntuple'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/ntuple'
+Making install in diff
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/diff'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/diff'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_diff.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/diff'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/diff'
+Making install in deriv
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/deriv'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/deriv'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_deriv.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/deriv'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/deriv'
+Making install in cdf
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/cdf'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/cdf'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_cdf.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/cdf'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/cdf'
+Making install in wavelet
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/wavelet'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/wavelet'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_wavelet.h gsl_wavelet2d.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/wavelet'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/wavelet'
+Making install in bspline
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/bspline'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/bspline'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_bspline.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/bspline'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/bspline'
+Making install in spblas
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/spblas'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/spblas'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_spblas.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/spblas'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/spblas'
+Making install in spmatrix
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/spmatrix'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/spmatrix'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_spmatrix.h gsl_spmatrix_char.h gsl_spmatrix_double.h gsl_spmatrix_float.h gsl_spmatrix_int.h gsl_spmatrix_long_double.h gsl_spmatrix_long.h gsl_spmatrix_short.h gsl_spmatrix_uchar.h gsl_spmatrix_uint.h gsl_spmatrix_ulong.h gsl_spmatrix_ushort.h gsl_spmatrix_complex_float.h gsl_spmatrix_complex_double.h gsl_spmatrix_complex_long_double.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/spmatrix'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/spmatrix'
+Making install in splinalg
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/splinalg'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/splinalg'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_splinalg.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/splinalg'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/splinalg'
+Making install in doc
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1/doc'
+Making install in .
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/doc'
+make[3]: Entering directory '/home/wang/GSL/gsl-2.7.1/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+/usr/bin/mkdir -p "/home/wang/find_root/share/info"
+/usr/bin/install -c -m 644 ./gsl-ref.info /home/wang/find_root/share/info
+ /usr/bin/mkdir -p '/home/wang/find_root/share/man/man1'
+ /usr/bin/install -c -m 644 gsl-config.1 gsl-randist.1 gsl-histogram.1 '/home/wang/find_root/share/man/man1'
+ /usr/bin/mkdir -p '/home/wang/find_root/share/man/man3'
+ /usr/bin/install -c -m 644 gsl.3 '/home/wang/find_root/share/man/man3'
+make[3]: Leaving directory '/home/wang/GSL/gsl-2.7.1/doc'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/doc'
+Making install in examples
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1/doc/examples'
+make[3]: Entering directory '/home/wang/GSL/gsl-2.7.1/doc/examples'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/wang/GSL/gsl-2.7.1/doc/examples'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1/doc/examples'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1/doc'
+make[1]: Entering directory '/home/wang/GSL/gsl-2.7.1'
+make[2]: Entering directory '/home/wang/GSL/gsl-2.7.1'
+ /usr/bin/mkdir -p '/home/wang/find_root/lib'
+ /bin/bash ./libtool   --mode=install /usr/bin/install -c   libgsl.la '/home/wang/find_root/lib'
+libtool: install: /usr/bin/install -c .libs/libgsl.so.27.0.0 /home/wang/find_root/lib/libgsl.so.27.0.0
+libtool: install: (cd /home/wang/find_root/lib && { ln -s -f libgsl.so.27.0.0 libgsl.so.27 || { rm -f libgsl.so.27 && ln -s libgsl.so.27.0.0 libgsl.so.27; }; })
+libtool: install: (cd /home/wang/find_root/lib && { ln -s -f libgsl.so.27.0.0 libgsl.so || { rm -f libgsl.so && ln -s libgsl.so.27.0.0 libgsl.so; }; })
+libtool: install: /usr/bin/install -c .libs/libgsl.lai /home/wang/find_root/lib/libgsl.la
+libtool: install: /usr/bin/install -c .libs/libgsl.a /home/wang/find_root/lib/libgsl.a
+libtool: install: chmod 644 /home/wang/find_root/lib/libgsl.a
+libtool: install: ranlib /home/wang/find_root/lib/libgsl.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/sbin" ldconfig -n /home/wang/find_root/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /home/wang/find_root/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/home/wang/find_root/bin'
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c gsl-randist gsl-histogram '/home/wang/find_root/bin'
+libtool: install: /usr/bin/install -c .libs/gsl-randist /home/wang/find_root/bin/gsl-randist
+libtool: install: /usr/bin/install -c .libs/gsl-histogram /home/wang/find_root/bin/gsl-histogram
+ /usr/bin/mkdir -p '/home/wang/find_root/bin'
+ /usr/bin/install -c gsl-config '/home/wang/find_root/bin'
+ /usr/bin/mkdir -p '/home/wang/find_root/share/aclocal'
+ /usr/bin/install -c -m 644 gsl.m4 '/home/wang/find_root/share/aclocal'
+ /usr/bin/mkdir -p '/home/wang/find_root/lib/pkgconfig'
+ /usr/bin/install -c -m 644 gsl.pc '/home/wang/find_root/lib/pkgconfig'
+ /usr/bin/mkdir -p '/home/wang/find_root/include/gsl'
+ /usr/bin/install -c -m 644 gsl_math.h gsl_pow_int.h gsl_nan.h gsl_machine.h gsl_mode.h gsl_precision.h gsl_types.h gsl_version.h gsl_minmax.h gsl_inline.h '/home/wang/find_root/include/gsl'
+make[2]: Leaving directory '/home/wang/GSL/gsl-2.7.1'
+make[1]: Leaving directory '/home/wang/GSL/gsl-2.7.1'
