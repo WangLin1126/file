@@ -1,0 +1,14 @@
+\documentclass{ctexart}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\title{一维非线性方程求根}
+
+\author{王麟 \\ 数学与应用数学 3210104213}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+二次递归方程$z_{n+1}={z_n}^+c2$对每个固定的复数c，都确定了一个Julia set。如$z_{n+1}$果不能发散到无穷，则称初始的$z_0$为属于该固定c的Julia set。
+\end{abstract}
+\end{document}

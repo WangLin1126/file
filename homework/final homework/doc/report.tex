@@ -1,0 +1,172 @@
+\documentclass{ctexart}
+\bibliographystyle{plain}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{url}
+\usepackage{tikz}
+\usepackage{amsmath}
+
+\usepackage{subfigure}
+\usepackage{gnuplot-lua-tikz}
+\usepackage{float}
+\usepackage{xcolor}
+
+\usetikzlibrary{shapes,arrows}
+\title{Julia集的分析和探索}
+\author{王麟 \\ 数学与应用数学 3210104213}
+
+\begin{document}
+
+
+\maketitle
+\begin{abstract}
+二次递归方程$z_{n+1}={z_n}^2+c$对每个固定的复数c，都确定了一个Julia set。如果$z_{n+1}$不能发散到无穷，则称初始的$z_0$为属于该固定c的Julia set。
+\end{abstract}
+\pagenumbering{roman}
+\pagenumbering{arabic}
+
+\lstset{
+ columns=fixed,       
+ numbers=left,                                            
+ commentstyle=\it\color[RGB]{0,96,96},              
+ stringstyle=\rmfamily\slshape\color[RGB]{128,0,0},   
+}
+\section{引言}
+
+\indent Julia集合是以法国数学家加斯顿·朱莉娅（Gaston Julia）的名字命名的，他在1915年研究了这些集合的性质，并在1918年发表了著名的论文《理性基金上的Mémoire sur l'itération des fonctions rationnelles》。虽然Julia集现在与二次多项式$z_{n+1}=z^2_n+c$相关联，但Julia对更一般表达式的迭代性质感兴趣，即
+
+$$z^4+\frac{z^3}{z-1}+\frac{z^2}{z^3+4z^2+5}+c$$
+
+Julia集可以有各种形状，CCA中的一个小变化可以极大地改变Julia集。1979年，在计算机的帮助下，B.B.Mandelbrot研究了Julia集，试图对所有可能的形状进行分类，并提出了一种新的形状：Mandelbrot集。\cite{ref3}\\
+\indent 在过去我们讨论了Mandelbrot集递归式,这是二次递归方程$z_{n+1}=z^2_n+z_0$（c是一个固定的复数）的特例。如今我们尝试使用类似Mandelbrot集的递归式进一步分析探索更普遍化的Julia集。
+\section{数学理论}
+ 我们把通过叠代方程$z_{n+1}=z^2_n+z_0$得到的有界元的所有$z_0$的集合称为Julia集。事实上，范围内每个c都有一个不同的Julia集。\cite{ref4} \\
+ \indent 与我们对Mandelbrot集所做的类似，对于一个固定的c我们得到了一个复数序列$z_n$
+n=0,1,2，$\cdots\cdots$
+
+如果轨道$z_n$未能逃逸到无穷大，则初始$z_0$属于Julia集。其中要求$2\geq |z_n|$.
+
+\section{算法及与流程图}
+
+\tikzstyle{startstop} = [rectangle,rounded corners, minimum width=3cm,minimum height=1cm,text centered, draw=black]
+\tikzstyle{io} = [trapezium, trapezium left angle = 70,trapezium right angle=110,minimum width=3cm,minimum height=1cm,text centered,draw=black]
+\tikzstyle{process} = [rectangle,minimum width=3cm,minimum height=1cm,text centered,text width =3cm,draw=black]
+\tikzstyle{decision} = [diamond,minimum width=3cm,minimum height=1cm,text centered,draw=black]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+\begin{tikzpicture}[node distance=2cm]
+\node (start) [startstop] {开始};
+\node (process0) [process,below of=start] {给定c的值};
+\node (process1) [process,below of=process0] {$z_{n+1}=z_n+c$};
+\node (decision1) [decision,below of=process1,yshift=-0.5cm] {$|z_{n+1}|>2?$};
+\node (decision2) [decision,right of=decision1,xshift=2cm] {$n<N$};
+\node (process3) [process,right of=process1,xshift=2cm] {$n=n+1$};
+\node (out1) [io,below of=decision1,yshift=-0.5cm] {发散};
+\node (out2) [io,right of= out1,xshift=2cm] {不发散};
+\node (stop) [startstop,below of=out1] {结束};
+
+\draw [arrow] (start) -- (process0);
+\draw [arrow] (process0) -- (process1);
+\draw [arrow] (process1) -- (decision1);
+\draw [arrow] (decision1) -- node[anchor=west] {Yes}(out1);
+\draw [arrow] (decision1) -- node[anchor=south] {No} (decision2);
+\draw [arrow] (decision2) -- node[anchor=east] {No} (out2);
+\draw [arrow] (decision2) -- node[anchor=east] {Yes} (process3);
+\draw [arrow] (process3) -- (process1);
+\draw [arrow] (out1) -- (stop);
+\draw [arrow] (out2) |- (stop);
+\end{tikzpicture}
+
+\newpage
+具体思路为：设置迭代次数 收敛半径，次数和常数，设置一个复数点集为初始点集 ，带入公式计算 ，找出不发散的点，记录这些点的位置矩阵，重复2、3步骤n次，画出矩阵 ，即Julia集的图像。
+
+\section{数值算例与分析}
+\begin{figure}[htbp]
+\centering
+
+\subfigure{
+\begin{minipage}[t]{0.3\linewidth}
+\centering
+\includegraphics[width=1.5in]{./photo/-0.80.1560.bmp}
+
+\end{minipage}
+}
+\subfigure{
+\begin{minipage}[t]{0.3\linewidth}
+\centering
+\includegraphics[width=1.5in]{./photo/-0.70.16.bmp}
+
+\end{minipage}
+}
+
+\subfigure{
+\begin{minipage}[t]{0.3\linewidth}
+\centering
+\includegraphics[width=1.5in]{./photo/-0.50.5.bmp}
+
+\end{minipage}
+}
+\subfigure{
+\begin{minipage}[t]{0.3\linewidth}
+\centering
+\includegraphics[width=1.5in]{./photo/0-0.5.bmp}
+
+\end{minipage}
+}
+\end{figure}
+
+以上四幅图分别通过改变dimension改变图片缩放大小 与c的初值改变图片形状而生成，而将叠代上限N不断扩大后生成的图片会愈发精细，局部细节也将产生重复。\\
+\indent 我们尝试将图片赋予色彩\\
+\begin{figure}[htbp]
+\centering
+
+\subfigure{
+\begin{minipage}[t]{0.3\linewidth}
+\centering
+\includegraphics[width=1.5in]{./photo/0.255.bmp}
+
+\end{minipage}
+}
+\subfigure{
+\begin{minipage}[t]{0.3\linewidth}
+\centering
+\includegraphics[width=1.5in]{./photo/-0.80.1.bmp}
+
+\end{minipage}
+}
+
+\subfigure{
+\begin{minipage}[t]{0.3\linewidth}
+\centering
+\includegraphics[width=1.5in]{./photo/3.bmp}
+
+\end{minipage}
+}
+\subfigure{
+\begin{minipage}[t]{0.3\linewidth}
+\centering
+\includegraphics[width=1.5in]{./photo/5.bmp}
+
+\end{minipage}
+}
+\end{figure}
+
+
+由上可见，根据叠代次数分类将边界的外部或者内部填充色彩后，其展现出了渐变色彩，这说明原本属于同一类边界内部的图像也可以进一步分类，值得注意的是，我们尝试把所有的色彩填充至内部后，所有的位图颜色均能显现。这与Manderbrot展现出来的效果基本一致。
+\section{总结}
+
+由于Mandelbrot集的定义，Mandelbrot集在给定点的几何与相应Julia集的结构之间存在密切的对应关系。换句话说，Mandelbrot集形成了Julia集的一种索引。Julia集要么连通，要么断开，这由c的值确定。
+
+
+从Mandelbrot集内部选择的连接，而从Mandelbrot集外部选择的连接断开。断开连接的集合通常被称为分形，无论以何种分辨率查看，它们由单个点组成。\cite{ref5}
+
+Julia集作为Mandelbrot集的充分化，其展现的连续性远不如Mandelbrot集明显，而将Mandelbrot集合的每一部分放大后都能找出与Julia集相似的部分，这是因为他们源于相同的叠代方式，虽然最终展现的点不同，但是其背后隐藏的分形学结构，值得我们进一步探讨\cite{ref6}
+
+
+
+\bibliography{books}
+
+\end{document}
+
+
+
