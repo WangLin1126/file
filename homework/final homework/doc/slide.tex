@@ -6,7 +6,6 @@
 \usepackage{listings}
 \usepackage{mathtools}
 \usepackage{hyperref}
-
 \usepackage{url}
 \usepackage{tikz}
 \usepackage{amsmath}
@@ -16,10 +15,9 @@
 \usepackage{float}
 \usepackage{xcolor}
 \hypersetup{pdfpagemode=FullScreen}  
-
+\usetikzlibrary{shapes,arrows}
 \usetheme{Frankfurt}       
 \usecolortheme{orchid}     
-
 
 \begin{document}
 \lstset{
@@ -30,7 +28,7 @@
 }
 
 \title{Julia集的分析和探索}
-\author{王麟}
+\author{王麟 \\ 数学与应用数学\\3210104213}
 \institute{浙江大学}
 \date{2022~年~7~月~4~日}
 \frame{\titlepage}
@@ -54,29 +52,45 @@ Julia集可以有各种形状，CCA中的一个小变化可以极大地改变Jul
 
 \AtBeginSection[]{\frame{\tableofcontents[currentsection,hideallsubsections]}}
 
-
-\begin{frame}
-\begin{center}
-Mandelbrot集合是一个复数c的集合，c由  $z _0 = 0$开始迭代而得到,得到的值可以组成一个数列，当该数列发散到无穷时，对应的点就属于Mandelbrot集合。Mandelbrot集合是分形中最经典例子。如 $c = 0$ 时，显然数列永远是0，并不发散，因此 $c = 0$ 不属于Mandelbrot集合。又如 $c = 3 i $ 时，对应的数列为 $3 i , − 9 + 3 i , 63 − 51 i , 1431 − 6477 j 3i, -9+3i, 63-51i, 1431-6477j 3i,−9+3i,63−51i,1431−6477j …. $，数字越来越庞大，因此3i就属于Mandelbrot集合。Julia集是一种在复平面上非发散点形成的分形点的集合。体现出了复变函数的分形之美。虽然映入眼帘的结果图看起来有点奇异，却同时又有一种奇特的美。这幅图实际上是复变函数迭代形成的Julia集的图像。
-
-\end{center}
-
-\end{frame}
-
 \section{算法}  
 \begin{frame}
-  \begin{center}
-\indent 具体思路为：设置迭代次数 收敛半径，次数和常数，设置一个复数点集为初始点集 ，带入公式计算 ，找出不发散的点，记录这些点的位置矩阵，重复2、3步骤n次，画出矩阵 ，即Julia集的图像。 设置迭代次数 收敛半径，次数和常数，设置一个复数点集为初始点集 ，带入公式计算 ，找出不发散的点，记录这些点的位置矩阵，重复2、3步骤n次，画出矩阵 ，即Julia集的图像。
+\begin{center}
+设置迭代次数与收敛半径、次数和常数c，设置一个复数点集为初始点集 ，代入递推公式计算 ，找出不发散的点，记录这些点的复数域平面直角坐标阵，重复叠代步骤至到达递退上限或者发散，画出坐标 ，即Julia集的图像。
 \end{center}
 \end{frame}
 \AtBeginSection[]{\frame{\tableofcontents[currentsection,hideallsubsections]}}
 
 \section{流程图展示}    
 
-\begin{frame}[t]
-这是本次实验的流程图
+\begin{frame}
+\tikzstyle{startstop} = [rectangle,rounded corners, minimum width=3cm,minimum height=1cm,text centered, draw=black]
+\tikzstyle{io} = [trapezium, trapezium left angle = 70,trapezium right angle=110,minimum width=3cm,minimum height=1cm,text centered,draw=black]
+\tikzstyle{process} = [rectangle,minimum width=3cm,minimum height=1cm,text centered,text width =3cm,draw=black]
+\tikzstyle{decision} = [diamond,minimum width=3cm,minimum height=1cm,text centered,draw=black]
+\tikzstyle{arrow} = [thick,->,>=stealth]
 
-\includegraphics[width=10.5cm]{./page.pdf}
+\begin{tikzpicture}[node distance=1.75cm]
+\node (start) [startstop] {开始};
+\node (process0) [process,below of=start] {给定c的值};
+\node (process1) [process,below of=process0] {$z_{n+1}=z_n+c$};
+\node (decision1) [decision,below of=process1,yshift=-0.5cm] {$|z_{n+1}|>2?$};
+\node (decision2) [decision,right of=decision1,xshift=2cm] {$n<N$};
+\node (process3) [process,right of=process1,xshift=2cm] {$n=n+1$};
+\node (out1) [io,below of=decision1,yshift=-0.5cm] {发散};
+\node (out2) [io,right of= out1,xshift=2cm] {不发散};
+\node (stop) [startstop,below of=out1] {结束};
+
+\draw [arrow] (start) -- (process0);
+\draw [arrow] (process0) -- (process1);
+\draw [arrow] (process1) -- (decision1);
+\draw [arrow] (decision1) -- node[anchor=west] {Yes}(out1);
+\draw [arrow] (decision1) -- node[anchor=south] {No} (decision2);
+\draw [arrow] (decision2) -- node[anchor=east] {No} (out2);
+\draw [arrow] (decision2) -- node[anchor=east] {Yes} (process3);
+\draw [arrow] (process3) -- (process1);
+\draw [arrow] (out1) -- (stop);
+\draw [arrow] (out2) |- (stop);
+\end{tikzpicture}
 
 \end{frame}
 
@@ -113,7 +127,12 @@ Mandelbrot集合是一个复数c的集合，c由  $z _0 = 0$开始迭代而得�
 
 \end{minipage}
 }
-
+\end{figure}
+\centering
+\indent 以上四幅图分别通过改变dimension改变图片缩放大小 与c的初值改变图片形状而生成，而将叠代上限N不断扩大后生成的图片会愈发精细，局部细节也将产生重复。\\
+\begin{frame}
+\begin{figure}[htbp]
+\centering
 \subfigure{
 \begin{minipage}[t]{0.3\linewidth}
 \centering
@@ -128,8 +147,8 @@ Mandelbrot集合是一个复数c的集合，c由  $z _0 = 0$开始迭代而得�
 \end{minipage}
 }
 \end{figure}
-
-
+\indent 根据叠代次数分类将边界的外部或者内部填充色彩后，其展现出了渐变色彩，这说明原本属于同一类边界内部的图像也可以进一步分类，值得注意的是，我们尝试把所有的色彩填充至内部后，所有的位图颜色均能显现。这与Manderbrot展现出来的效果基本一致。
+\end{frame}
 \end{document}
 
 
